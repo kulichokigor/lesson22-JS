@@ -34,8 +34,8 @@ if (meaning === 0) {
 console.log(meaning);
 
 //Завдання 3
-var sum = 0;
 
+var sum = 0;
 function summArguments() {
 	for (var i = 0; i < arguments.length; i++) {
 		sum += arguments[i];

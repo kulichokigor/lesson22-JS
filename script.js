@@ -19,19 +19,13 @@ console.log(sqrt);
 //Завдання 2
 
 var arr = [4, 3, 5, 5, 0, 4, 8, 6];
-var meaning = 0;
-var result = arr.reduce(function(sum, current) {
-	if (current === 0) {
-		meaning = sum;
-	} else {
-		return sum + current;
-	}
+var result = arr.reduce(function(sum, current, index) {
+	if (arr.indexOf(0) == -1 || index < arr.indexOf(0)) {
+		return sum + current
+	}else {return sum}
 }, 0);
-if (meaning === 0) {
-	meaning = result;
-}
 
-console.log(meaning);
+console.log(result);
 
 //Завдання 3
 
